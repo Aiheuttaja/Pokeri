@@ -17,40 +17,22 @@ import voittovalinta.Voitot;
  *
  * @author Janne
  */
-public class Pokeripeli implements KeyListener{
+public class Pokeripeli{
     
     public Jakaja jakaja;
     public Korttipakka pakka;
     public Kasi käsi;
     public Voitot voitot;
-    public Runnable Kayttoliittyma;
     
     public Pokeripeli(){
         this.jakaja = new Jakaja();
         this.pakka = new Korttipakka();
         this.käsi = new Kasi();
         this.voitot = new Voitot(1.0);
-        this.Kayttoliittyma.run();
     }
     
     public void pelaa(){
-        this.Kayttoliittyma.run();
     }  
-
-    @Override
-    public void keyTyped(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
 
     
 }
